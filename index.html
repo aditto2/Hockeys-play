@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockeys</title>
+    <!-- font-awesome-kit -->
+    <script src="https://kit.fontawesome.com/f668b39ff0.js" crossorigin="anonymous"></script>
     <!-- tailwind-and-daisy-ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,6 +23,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'bg-common': '#FF4240',
+                        'text-common': '#131318',
                     }
                 }
             }
@@ -35,8 +39,85 @@
 </head>
 
 <body class="manrope">
-    <header>
-
+    <header class="mx-auto lg:px-28 px-8 py-7">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Page</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost lg:text-4xl text-lg  lg:font-extrabold font-bold text-[#131318]">Hockey<span
+                            class="text-bg-common">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-bg-common"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Page</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-4">
+                    <i class="fa-solid fa-magnifying-glass lg:flex hidden"></i>
+                    <a class="btn bg-bg-common text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner-section -->
+        <div class="container lg:relative  my-7">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full lg:relative">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between lg:absolute
+                     lg:top-[570px] lg:right-0 lg:justify-start">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/cup.webp" class="w-full rounded-3xl" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/football.avif" class="w-full rounded-3xl" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/worldboll.webp" class="w-full rounded-3xl" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black p-7 lg:w-[566px] rounded-xl space-y-4 lg:absolute lg:top-[470px] lg:right-10">
+                <h3 class="text-xl font-bold text-white">Meet all the heroes from the field</h3>
+                <p class=" text-[#FFFFFF]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                    placerat dolor. Purus urna in
+                    sit nullam proi</p>
+            </div>
+        </div>
     </header>
 
     <main>
